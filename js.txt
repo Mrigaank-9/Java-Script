@@ -51,3 +51,22 @@ Conversion of data type
 // "mrigaank" -> true
 
 3. string -> "String(score)"
+
+ strict check- both check type and also the data using extra equal === , !== 
+
+
+ Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+
