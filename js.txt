@@ -1,0 +1,53 @@
+Node js founded by Ryan Dahl in 2009
+Deno js founded by Ryan Dahl in 2018
+
+- To run the File 
+1. Save the file with .js 
+2. Ensure Node.js is installed 
+3. Use command "node <file>.js" 
+
+-- we can use console.table([values, comma seperated]) to show the output in console as the table 
+
+- varible and constants 
+1. const - make the value to not change 
+2. let - It is more prefered 
+3. var - in js , scope was the issue , there is no scope. due to which is leads to problom so it is not prefered to use because of issue in block scope and functional scope. 
+4. without keyword - It is not prefered as make it less readable else no problem. 
+
+if we just declare the varible and not initalizing it thne i will contian value as undefined . 
+
+
+-- In prev verison of js there is no things like classes etc. 
+-- IN order to use new version of JS we use "Use strict" that allow node to understand that we are using the new js 
+
+-- we can't simply use alert() function in node as it will work in document file or in html 
+
+-- we can learn from MDN , EC39 
+
+Data types 
+
+1. number  => 2 to power 53
+2. bigint
+3. string
+4. boolean
+5. null => it is a standalone value, in js it is treated as object
+6. undefined => only declared not assigned
+7. symbol -> unqiueness check
+
+8. object****
+
+
+Conversion of data type 
+1. Number - using " Number(score); " also in this 
+// "33" -> 33
+// "33A -> NaN(Not a number)
+// understand -> NaN
+// null -> 0
+
+2. boolean - using " boolean(score) " 
+// "" -> false
+// 1 -> true
+// 0 -> false
+// "mrigaank" -> true
+
+3. string -> "String(score)"
