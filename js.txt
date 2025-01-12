@@ -70,3 +70,7 @@ Conversion of data type
        Function  =>  function
        Object  =>  object
 
+
+Date - Object type but also a type session 10
+
+Array - It makes the shallow copy in the Js 
