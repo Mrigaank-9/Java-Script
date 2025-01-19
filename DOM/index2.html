@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai and code</title>
+  </head>
+  <body bgcolor="#212121" style="color: white">
+    <ul class="language">
+      <li>Java Scipts</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`; // it traverse the whole tree DOM
+      const unorderedList = document.querySelector(".language");
+      unorderedList.appendChild(li);
+    }
+
+    addLanguage("Python");
+    addLanguage("TypeScript");
+
+    // it can lead to some problem as it habe to traverse the tree
+
+    // optimization
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+
+    addOptiLanguage("GOLang");
+
+    // Edit
+    const secondLang = document.querySelector("li:nth-child(2)"); // taking the value at index
+    // secondLang.innerHTML = "MOJO";
+    const newli = document.createElement("li");
+    newli.textContent = "MOJO";
+    secondLang.replaceWith(newli); // it will replace the valuess
+
+    // edit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>TypeScript</li>";
+
+    // remove the elememt
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
+</html>
